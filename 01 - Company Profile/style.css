@@ -88,17 +88,21 @@ header p {
     padding: 50px 10px;
 }
 
+.about img {
+    width: 30%;
+    height: auto;
+}
 
-.about .content-about {
+.content-about {
     padding: 2rem;
 }
 
-.about h2 {
+.content-about h2 {
     font-size: 30px;
     margin-bottom: 20px;
 }
 
-.about p {
+.content-about p {
     text-align: justify;
     line-height: 2;
     font-size: 1.2em;
