@@ -88,21 +88,18 @@ header p {
     padding: 50px 10px;
 }
 
-.about img {
-    width: 30%;
-    height: auto;
-}
 
-.content-about {
+.about .content-about {
     padding: 2rem;
 }
 
-.content-about h2 {
+.about h2 {
     font-size: 30px;
     margin-bottom: 20px;
+    margin-top: -25px;
 }
 
-.content-about p {
+.about p {
     text-align: justify;
     line-height: 2;
     font-size: 1.2em;
@@ -111,31 +108,41 @@ header p {
 /* END ABOUT */
 
 /* ACHIEVEMENT */
+
 .achievement {
-    background-color: rgb(41, 65, 245);
+    background-color: rgb(47, 115, 211);
     padding: 50px 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     column-gap: 20px;
 }
 
-.card-1,
-.card-2,
-.card-3 {
+.card {
     width: 200px;
     height: 250px;
-    background-color: #ddd;
-    border-radius: 8px;
+    background-color: rgb(51, 120, 218);
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: #ddd;
+    filter: drop-shadow(4px 4px 3px rgba(45, 45, 45, 0.308));
+    /* transition: all 0.2s 10ms ease-in-out; */
 }
+
+
+/* .card:hover {
+    background-color: rgb(52, 125, 228);
+    transform: scale(1.12);
+} */
 
 /* END ACHIEVEMENT */
 
+
 /* NAV 3 */
 /* END NAV3 */
+
 
 /* NAV 4 */
 /* END NAV 4 */
