@@ -1,0 +1,137 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8em;
+    height: 3000px;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 3em;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 33, 78, .6);
+    position: fixed;
+    width: 100vw;
+    z-index: 9999;
+    margin-bottom: 50px;
+}
+
+nav .logo {
+    color: white;
+    font-size: 1.6rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 35%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+/* END NAVBAR */
+
+/* HEADER */
+header {
+    background-color: #ccc;
+    background-image: url(img/office-gradient.webp);
+    height: 100vh;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+header h1 {
+    /* font-size: 5rem; */
+    font-size: 5rem;
+    color: rgb(250, 202, 70);
+    /* text-shadow: 2px 1px 12px rgba(12, 44, 87, 0.96); */
+    margin: auto;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+/* END HEADER */
+
+/* ABOUT */
+.about {
+    /* width: 80%; */
+    display: flex;
+    color: #333;
+    padding: 50px 10px;
+}
+
+
+.about .content-about {
+    padding: 2rem;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    text-align: justify;
+    line-height: 2;
+    font-size: 1.2em;
+}
+
+/* END ABOUT */
+
+/* ACHIEVEMENT */
+.achievement {
+    background-color: rgb(41, 65, 245);
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    width: 200px;
+    height: 250px;
+    background-color: #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* END ACHIEVEMENT */
+
+/* NAV 3 */
+/* END NAV3 */
+
+/* NAV 4 */
+/* END NAV 4 */
