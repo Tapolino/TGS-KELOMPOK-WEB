@@ -157,3 +157,55 @@ header h1 {
 
 /* NAV 4 */
 /* END NAV 4 */
+
+/* Footer "/
+footer {
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(251, 247, 247);
+    font-family: 'Lobster';
+    margin-top: 50px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.footer1 {
+    margin-right: 800px;
+}
+
+.list1234 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: 'courier';
+    font-weight: lighter;
+}
+
+.footer2 {
+    float: left;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.alamat1 {
+    margin-top: 15px;
+    font-family: 'courier';
+    text-align: left;
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: lighter;
+}
+
+.footer3 {
+    font-size: 40px;
+    float: right;
+    width: 40%;
+    text-align: justify;
+}
+
+.abous{
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: 'courier';
+    font-weight: lighter;
+}
+/* End Footer */
