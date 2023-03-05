@@ -11,6 +11,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.8em;
     height: 3000px;
+    background-color: #3E1404;
+    color: #ddd;
 }
 
 /* NAVBAR */
@@ -20,7 +22,7 @@ nav {
     height: 3em;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(0, 33, 78, .6);
+    background-color: #96421594;
     position: fixed;
     width: 100vw;
     z-index: 9999;
@@ -29,7 +31,8 @@ nav {
 
 nav .logo {
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.8em;
+    font-family: 'Lobster', cursive;
 }
 
 nav ul {
@@ -47,7 +50,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: white;
+    color: rgb(250, 202, 70);
 }
 
 /* END NAVBAR */
@@ -55,28 +58,28 @@ nav ul li a:hover {
 /* HEADER */
 header {
     background-color: #ccc;
-    background-image: url(img/office-gradient.webp);
+    background-image: url(img/coffee-header.jpg);
     height: 100vh;
     background-size: cover;
     background-position: right;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: aliceblue;
 }
 
 header h1 {
     /* font-size: 5rem; */
+    /* background-color: #3E1404; */
+    font-family: 'Lobster', cursive;
+    width: 9em;
     font-size: 5rem;
     color: rgb(250, 202, 70);
+    margin: 50px;
+    line-height: 1.2;
     /* text-shadow: 2px 1px 12px rgba(12, 44, 87, 0.96); */
-    margin: auto;
 }
 
-header p {
-    font-size: 1.5rem;
-}
 
 /* END HEADER */
 
@@ -84,10 +87,15 @@ header p {
 .about {
     /* width: 80%; */
     display: flex;
-    color: #333;
+    color: #ddd;
     padding: 50px 10px;
 }
 
+.about img {
+    display: block;
+    width: 40em;
+    height: 25em;
+}
 
 .about .content-about {
     padding: 2rem;
@@ -96,7 +104,7 @@ header p {
 .about h2 {
     font-size: 30px;
     margin-bottom: 20px;
-    margin-top: -25px;
+    color: rgb(250, 202, 70);
 }
 
 .about p {
@@ -108,9 +116,8 @@ header p {
 /* END ABOUT */
 
 /* ACHIEVEMENT */
-
 .achievement {
-    background-color: rgb(47, 115, 211);
+    background-color: rgb(150, 67, 21);
     padding: 50px 10px;
     display: flex;
     justify-content: space-around;
@@ -120,13 +127,13 @@ header p {
 .card {
     width: 200px;
     height: 250px;
-    background-color: rgb(51, 120, 218);
+    background-color: rgb(170, 75, 24);
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #ddd;
+    color: rgb(250, 202, 70);
     filter: drop-shadow(4px 4px 3px rgba(45, 45, 45, 0.308));
     /* transition: all 0.2s 10ms ease-in-out; */
 }
@@ -139,10 +146,8 @@ header p {
 
 /* END ACHIEVEMENT */
 
-
 /* NAV 3 */
 /* END NAV3 */
-
 
 /* NAV 4 */
 /* END NAV 4 */
