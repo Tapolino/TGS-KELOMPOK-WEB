@@ -44,7 +44,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #ddd;
+    color: white;
     font-weight: bold;
     margin-right: 5px;
 }
@@ -88,13 +88,14 @@ header h1 {
     /* width: 80%; */
     display: flex;
     color: #ddd;
-    padding: 50px 10px;
+    padding: 20px;
+    gap: 20px;
 }
 
 .about img {
-    display: block;
-    width: 40em;
-    height: 25em;
+    width: 30em;
+    aspect-ratio: 3/1;
+    object-fit: cover;
 }
 
 .about .content-about {
@@ -103,7 +104,7 @@ header h1 {
 
 .about h2 {
     font-size: 30px;
-    margin-bottom: 20px;
+
     color: rgb(250, 202, 70);
 }
 
@@ -136,6 +137,11 @@ header h1 {
     color: rgb(250, 202, 70);
     filter: drop-shadow(4px 4px 3px rgba(45, 45, 45, 0.308));
     /* transition: all 0.2s 10ms ease-in-out; */
+}
+
+.card p {
+    color: #ffffff;
+    font-weight: normal;
 }
 
 
