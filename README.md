@@ -6,7 +6,7 @@
   2. M Rizal Efendi - 2108101035
   3. Ananda Bagus Priawan - 21081010252
   4. Anif Fitria Dewi Marselina - 21081010025
-  5.
+  5. Sabda Sankalla - 21081010213
   
   
   !!  TUGAS !!
