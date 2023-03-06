@@ -61,7 +61,6 @@ nav ul li a:hover {
 
 /* HEADER */
 header {
-    background-color: #ccc;
     background-image: url(img/coffee-header.webp);
     height: 100vh;
     background-size: cover;
@@ -122,7 +121,7 @@ header h1 {
 
 /* ACHIEVEMENT */
 .achievement {
-    background-color: rgb(129, 58, 19);
+    background-color: rgb(130, 57, 18);
     padding: 50px 10px;
     display: flex;
     justify-content: space-around;
@@ -136,55 +135,96 @@ header h1 {
     border-radius: 15px;
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     color: rgb(250, 202, 70);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     transition: all 150ms ease-in-out;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+.card {
+    background-image: url(img/Barista.webp);
+}
+
+.card.satu {
+    background-image: url(img/Coffee-shop.webp);
+}
+
+.card.dua {
+    background-image: url(img/Customers.webp);
+}
+
+.card.tiga {
+    background-image: url(img/Coffee-Beans.webp);
+}
+
+.card.empat {
+    background-image: url(img/Barista-2.webp);
 }
 
 .card p {
     color: #ffffff;
     font-weight: normal;
+    z-index: 500;
 }
 
 
 .card:hover {
-    background-color: rgb(180, 80, 26);
     transform: scale(1.03);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+.overlay {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgb(29, 9, 0));
+}
+
 /* END ACHIEVEMENT */
+
 /* SERVICE */
-.service{
+.service {
     display: flex;
     color: #ddd;
     padding: 20px;
     gap: 20px;
-    height: 160px;
+    justify-content: right;
+    align-items: center;
 }
 
-.service img{
-    width: 20em;
-    height: 10em;
-    aspect-ratio: 3/1;
+.content-service {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 50%;
+}
+
+
+.service img {
+    width: 30em;
+    aspect-ratio: 3/2;
     object-fit: cover;
 }
 
 .service h2 {
     font-size: 30px;
-
+    margin-bottom: 10px;
     color: rgb(250, 202, 70);
+}
+
+.content-service p {
+    line-height: 2;
+    font-size: 1.2em;
 }
 
 /* END SERVICE*/
 
-/* NAV 3 */
-/* END NAV3 */
 
 /* NAV 4 */
+
 /* END NAV 4 */
 
 footer {
