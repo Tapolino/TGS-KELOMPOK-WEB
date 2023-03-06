@@ -193,17 +193,3 @@ footer {
     line-height: 160%;
     font-weight: lighter;
 }
-
-.footer3 {
-    font-size: 40px;
-    float: right;
-    width: 40%;
-    text-align: justify;
-}
-
-.abous{
-    margin-top: 15px;
-    font-size: 20px;
-    font-family: 'courier';
-    font-weight: lighter;
-}
