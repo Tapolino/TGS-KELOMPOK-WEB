@@ -62,7 +62,7 @@ nav ul li a:hover {
 /* HEADER */
 header {
     background-color: #ccc;
-    background-image: url(img/coffee-header.jpg);
+    background-image: url(img/coffee-header.webp);
     height: 100vh;
     background-size: cover;
     background-position: right;
@@ -165,37 +165,34 @@ header h1 {
 /* END NAV 4 */
 
 footer {
-    font-size: 30px;
-    font-weight: bolder;
     color: rgb(251, 247, 247);
-    font-family: 'Lobster';
-    margin-top: 50px;
-    margin-left: 40px;
-    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-weight: normal;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #110500;
 }
 
-.footer1 {
-    margin-right: 800px;
+footer h4 {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+.footer1 h4 {
+    margin-bottom: 10px;
+
 }
 
 .list1234 {
     margin-top: 15px;
-    font-size: 20px;
-    font-family: 'courier';
-    font-weight: lighter;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
 }
 
-.footer2 {
-    float: left;
-    text-align: left;
-    margin-bottom: 50px;
-}
-
-.alamat1 {
-    margin-top: 15px;
-    font-family: 'courier';
-    text-align: left;
-    font-size: 20px;
-    line-height: 160%;
-    font-weight: lighter;
+.footer2 .list1234 img {
+    width: 1.11em;
 }
