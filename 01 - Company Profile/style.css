@@ -223,9 +223,68 @@ header h1 {
 /* END SERVICE*/
 
 
-/* NAV 4 */
+/* MENU */
+.menu {
+    display: flex;
+    background-color: #110500;
+    width: 100%;
+    height: 50vh;
+}
 
-/* END NAV 4 */
+.menu > .one {
+    font-family: 'Lobster', cursive;
+    z-index: 1;
+    padding-left: 50px;
+}
+
+.grid {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    grid-gap: 50px;
+    font-family: 'Lobster', cursive;
+    width: 100px;
+    padding-left: 100px;
+}
+
+.isi img {
+    z-index: 1;
+    width: 240px;
+    height: 25vh;
+    object-fit: cover;
+}
+.grid > .isi {
+    box-shadow: 5px 5px 5px 0px black;
+    border-radius: 30px;
+    text-align: center;
+    background: whitesmoke;
+    width: 240px;
+}
+
+.grid > .isi:hover {
+    transform: scale(1.2);
+}
+
+.konten p {
+    font-size: smaller;
+    font-family: 'Times New Roman', Times, serif;
+    color: #110500;
+    padding: 3px 3px;
+    line-height: 1.5;
+}
+
+ .two {
+    position: absolute;
+    background: url(background-menu.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    filter: blur(10px);
+}
+/* END MENU */
 
 footer {
     color: rgb(251, 247, 247);
