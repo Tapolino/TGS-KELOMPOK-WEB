@@ -297,7 +297,7 @@ footer {
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     background-color: #110500;
 }
 
@@ -308,16 +308,39 @@ footer h4 {
 
 .footer1 h4 {
     margin-bottom: 10px;
-
 }
 
 .list1234 {
     margin-top: 15px;
     display: flex;
-    align-items: start;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 }
 
-.footer2 .list1234 img {
-    width: 1.11em;
+.list1234 svg {
+    width: 1.5em;
+    fill: #ffffff;
+    stroke: none;
+}
+
+.list1234 .icon-ig {
+    fill: none;
+    stroke: white;
+}
+
+.list1234 .icon-fb:hover {
+    fill: #4267B2;
+}
+
+.list1234 .icon-twt:hover {
+    fill: #37ACED;
+}
+
+.list1234 .icon-ig:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.list1234 .icon-wa:hover {
+    fill: #3BE85B;
 }
