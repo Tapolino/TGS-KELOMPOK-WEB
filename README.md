@@ -13,4 +13,7 @@
   
   • Tugas 1 (01 - Company Profile)
     Membuat company profile dengan menggunakan HTML dan CSS
+    
+  • Project Akhir (02 - Project Akhir)
+    Membuat website dengan mengimplementasikan meteri yang telah dipelajari
   
