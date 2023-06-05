@@ -1,6 +1,6 @@
 :root {
     scroll-behavior: smooth;
-    scroll-padding-top: 90px;
+    scroll-padding-top: 120px;
     /*48px*/
     line-height: 1.5;
     --body-color: rgb(240, 253, 239);
@@ -131,38 +131,49 @@ nav ul li a:hover {
 /* ABOUT */
 .about {
     display: flex;
-    padding: 30px 15%;
+    padding: 50px 150px;
     gap: 20px;
 }
 
 .about h2 {
     font-size: 30px;
-    color: rgb(143, 209, 19);
-    text-align: center;
+    color: var(--header-color);
+    text-align: left;
     margin-bottom: 20px;
 }
 
 .about p {
-    text-align: center;
-    font-size: 1.2em;
+    text-align: left;
+    font-size: 1.08em;
+}
+
+.about img {
+    width: 250px;
 }
 
 /* END ABOUT */
 
 /* ACHIEVEMENT */
 .achievement {
-    padding: 50px 10px;
+    padding: 100px 150px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+}
+
+.heading-achievement h2 {
+    font-size: 30px;
+    color: var(--header-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     line-height: normal;
 }
 
-.achi h2 {
-    font-size: 30px;
-    color: rgb(143, 209, 19);
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 .card {
     width: 150px;
@@ -233,24 +244,22 @@ nav ul li a:hover {
 footer {
     color: #efefef;
     font-family: Arial, Helvetica, sans-serif;
-
     font-weight: normal;
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: start;
     background-color: var(--secondary-color);
+    flex-direction: row;
 }
 
-footer h4 {
-    font-size: 2rem;
+
+.follow h4 {
+    margin-bottom: 1.2rem;
+    text-align: center;
 }
 
-.footer1 h4 {
-    margin-bottom: 10px;
-}
-
-.list1234 {
+.follow .list1234 {
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
@@ -258,29 +267,38 @@ footer h4 {
     align-items: center;
 }
 
-.list1234 svg {
+.follow .list1234 svg {
     width: 1.5em;
     fill: #ffffff;
     stroke: none;
 }
 
-.list1234 .icon-ig {
-    fill: none;
-    stroke: white;
+.icon {
+    width: 1.8em;
+    height: 1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    border-radius: 10px;
 }
 
-.list1234 .icon-fb:hover {
-    fill: #4267B2;
+.icon.satu:hover {
+    background-color: #4267B2;
 }
 
-.list1234 .icon-twt:hover {
-    fill: #37ACED;
-}
-
-.list1234 .icon-ig:hover {
+.icon.dua:hover {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
-.list1234 .icon-wa:hover {
-    fill: #3BE85B;
+.icon.tiga:hover {
+    background-color: #37ACED;
+}
+
+.icon.empat:hover {
+    background-color: #3BE85B;
+}
+
+.icon:hover svg {
+    fill: white;
 }
