@@ -29,7 +29,10 @@ if (move_uploaded_file($gambar_tmp, $gambar_destination)) {
     $sql = "INSERT INTO pengaduan (usia, jdl_laporan, isi_laporan, status, gambar) VALUES ('$usia', '$jdl_laporan', '$isi_laporan', '$status', '$gambar_new_name')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Pengaduan berhasil dikirim.";
+        // Tampilkan pesan pengaduan berhasil terkirim
+        echo "<h1>Pengaduan Telah Terkirim</h1>";
+        echo "<p>Terima kasih atas pengaduan Anda.</p>";
+        echo "<a href='index.html' class='button'>Kembali ke Menu Utama</a>";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
