@@ -15,7 +15,9 @@ if ($conn->connect_error) {
 $usia = $_POST['usia'];
 $jdl_laporan = $_POST['jdl_laporan'];
 $isi_laporan = $_POST['isi_laporan'];
-$status = $_POST['status'];
+
+// Cek apakah 'status' ada dalam $_POST sebelum mengambil nilainya
+$status = isset($_POST['status']) ? $_POST['status'] : '';
 
 // Upload gambar
 $gambar_name = $_FILES['Foto']['name'];
@@ -30,14 +32,21 @@ if (move_uploaded_file($gambar_tmp, $gambar_destination)) {
 
     if ($conn->query($sql) === TRUE) {
         // Tampilkan pesan pengaduan berhasil terkirim
-        echo "<h1>Pengaduan Telah Terkirim</h1>";
-        echo "<p>Terima kasih atas pengaduan Anda.</p>";
-        echo "<a href='index.html' class='button'>Kembali ke Menu Utama</a>";
+        echo "<div style='background-color: #f2f2f2; padding: 20px; border-radius: 5px; text-align: center; font-family: Arial, sans-serif;'>";
+        echo "<h1 style='color: #333;'>Pengaduan Telah Terkirim</h1>";
+        echo "<p style='color: #666;'>Terima kasih Atas Pengaduan Anda.</p>";
+        echo "<a href='index.html' style='display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: #fff; 
+              text-decoration: none; border-radius: 5px;'>Kembali ke Menu Utama</a>";
+        echo "</div>";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "<div style='background-color: #f2f2f2; padding: 20px; border-radius: 5px; text-align: center;'>";
+        echo "<p style='color: #ff0000;'>Error: " . $sql . "<br>" . $conn->error . "</p>";
+        echo "</div>";
     }
 } else {
-    echo "Gagal mengunggah gambar.";
+    echo "<div style='background-color: #f2f2f2; padding: 20px; border-radius: 5px; text-align: center;'>";
+    echo "<p style='color: #ff0000;'>Gagal mengunggah gambar.</p>";
+    echo "</div>";
 }
 
 $conn->close();
