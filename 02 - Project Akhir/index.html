@@ -87,28 +87,19 @@
     </section>
     <!-- END ACHIEVEMENT -->
 
-        <!-- FORM -->
-    <section id="form-section">
-        <div class="header">
-            <nav>
-                <img src="gambar/toa.png" class="logo">
-                <div class="header_logo">AYO LAPOR!!</div>
-                <div class="header_list">
-                    <ul>
-                        <li><a href="">Masuk</a></li>
-                        <li><a href="">Daftar</a></li>
-                    </ul>
-                </div>
-            </nav>
+   <!-- FORM -->
+    <section class="form-section" id="form-section">
+        <div class="heading-achievement">
+            <h2>Buat Aduan</h2>
         </div>
     
-        <div class="main">
+        <div class="form-section">
             <form method="post" action="proses_pengaduan.php" enctype="multipart/form-data">
                 <!--<div class="form-group">
                     <label>Tanggal Pengaduan</label>
                     <input type="text" name="tgl_pengaduan" class="form-control" autocomplete="cc-exp-year">-->
                 <div class="form-group">
-                    <label for="">Usia Anda</label> 
+                    <label for="">Usia Anda</label>
                     <select class="form-group" name="usia">
                         <option value="11-17">11-17 Tahun</option>
                         <option value="18-22">18-22 Tahun</option>
@@ -128,18 +119,12 @@
                     <input type="file" required class="form-control" name="Foto" accept="image/*">
                 </div> <br>
                 <div class="form-group">
-                    <label for=""> </label>
-                    <input type="radio" name="status" value="anonim">Anonim
-                    <input type="radio" name="status" value="rahasia">Rahasia
-                </div> <br>
-                <div class="form-group">
                     <button type="submit" class="btn btn-success"> LAPOR </button>
                 </div>
     
             </form>
         </div>
     </section>
-
     <!-- END FORM -->
 
     <!-- FOOTER -->
