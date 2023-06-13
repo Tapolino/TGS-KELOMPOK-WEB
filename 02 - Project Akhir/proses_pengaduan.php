@@ -23,7 +23,10 @@ $status = isset($_POST['status']) ? $_POST['status'] : '';
 $gambar_name = $_FILES['Foto']['name'];
 $gambar_tmp = $_FILES['Foto']['tmp_name'];
 $gambar_ext = pathinfo($gambar_name, PATHINFO_EXTENSION);
-$gambar_new_name = uniqid() . "." . $gambar_ext;
+$usia_range = $_POST['usia'];
+
+// Format penamaan file
+$gambar_new_name = $usia_range . '_' . $jdl_laporan . '_' . $gambar_name;
 $gambar_destination = "uploads/" . $gambar_new_name;
 
 if (move_uploaded_file($gambar_tmp, $gambar_destination)) {
@@ -50,4 +53,3 @@ if (move_uploaded_file($gambar_tmp, $gambar_destination)) {
 }
 
 $conn->close();
-?>
