@@ -16,9 +16,6 @@ $usia = $_POST['usia'];
 $jdl_laporan = $_POST['jdl_laporan'];
 $isi_laporan = $_POST['isi_laporan'];
 
-// Cek apakah 'status' ada dalam $_POST sebelum mengambil nilainya
-$status = isset($_POST['status']) ? $_POST['status'] : '';
-
 // Upload gambar
 $gambar_name = $_FILES['Foto']['name'];
 $gambar_tmp = $_FILES['Foto']['tmp_name'];
@@ -31,7 +28,8 @@ $gambar_destination = "uploads/" . $gambar_new_name;
 
 if (move_uploaded_file($gambar_tmp, $gambar_destination)) {
     // Simpan data ke database
-    $sql = "INSERT INTO pengaduan (usia, jdl_laporan, isi_laporan, status, gambar) VALUES ('$usia', '$jdl_laporan', '$isi_laporan', '$status', '$gambar_new_name')";
+    $sql = "INSERT INTO pengaduan (usia, jdl_laporan, isi_laporan, foto, gambar) VALUES ('$usia', '$jdl_laporan', '$isi_laporan', '$gambar_name', '$gambar_new_name')";
+
 
     if ($conn->query($sql) === TRUE) {
         // Tampilkan pesan pengaduan berhasil terkirim
