@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2023 at 04:10 AM
+-- Generation Time: Jun 13, 2023 at 04:21 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -35,13 +35,6 @@ CREATE TABLE `pengaduan` (
   `foto` varchar(255) DEFAULT NULL,
   `gambar` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `pengaduan`
---
-
-INSERT INTO `pengaduan` (`id`, `usia`, `jdl_laporan`, `isi_laporan`, `foto`, `gambar`) VALUES
-(17, '11-17', 'asasasa', 'sasasasasas', 'cat.jpg', '11-17_asasasa_cat.jpg');
 
 --
 -- Indexes for dumped tables
